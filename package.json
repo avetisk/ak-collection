@@ -1,0 +1,35 @@
+{
+  "name": "ak-collection",
+  "version": "0.0.1",
+  "description": "collection",
+  "keywords": [
+    "collection",
+    "array"
+  ],
+  "license": "MIT",
+  "author": "Avétis KAZARIAN",
+  "contributors": "Avétis KAZARIAN",
+  "homepage": "https://github.com/avetisk/ak-collection",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/avetisk/ak-collection.git"
+  },
+  "bugs": {
+    "url": "https://github.com/avetisk/ak-collection/issues"
+  },
+  "readmeFilename": "README.md",
+  "scripts": {
+    "test": "make test"
+  },
+  "engines": {
+    "node": "~0.10.22"
+  },
+  "dependencies": {
+    "ak-eventemitter": "~0.0.2",
+    "stluafed": "~0.0.4"
+  },
+  "devDependencies": {
+    "browserify": "~2.35.4",
+    "mocha": "~1.16.1"
+  }
+}
