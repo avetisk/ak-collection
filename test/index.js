@@ -556,7 +556,7 @@ describe('Collection', function () {
       var counter = false;
       var collection = new Collection([o4, o2, o1, o3, o2], {
         'sort': function (a, b) {
-          return a.x > b.x;
+          return a.x - b.x;
         }
       });
       collection.eventEmitter.on('change.sort', function () {
@@ -572,7 +572,7 @@ describe('Collection', function () {
       assert.strictEqual(collection._data[4], o4);
 
       collection.sort(function (a, b) {
-        return a.x < b.x;
+        return b.x - a.x;
       });
 
       assert.strictEqual(collection.length, 5);
