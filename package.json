@@ -29,7 +29,6 @@
     "stluafed": "~0.0.4"
   },
   "devDependencies": {
-    "browserify": "~2.35.4",
     "mocha": "~1.16.1"
   }
 }

@@ -4,8 +4,9 @@ test: validate
 	@./node_modules/.bin/mocha test --reporter dot
 
 clean:
-	@rm -fr node_modules
+	@rm -fr ./node_modules
 	@rm -fr ./lib-cov
+	@rm -fr ./test/build.js
 
 validate:
 	@jshint --config .jshintrc $(JS)
@@ -13,6 +14,6 @@ validate:
 coverage:
 	@rm -fr ./lib-cov
 	@jscoverage ./lib ./lib-cov
-	@-TEST_COVERAGE=1 ./node_modules/.bin/mocha --reporter html-cov > ./lib-cov/index.html
+	@-AK_COLLECTION_TEST_COVERAGE=1 ./node_modules/.bin/mocha --reporter html-cov > ./lib-cov/index.html
 
 .PHONY: clean test validate coverage

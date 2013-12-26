@@ -1,7 +1,5 @@
 /*global describe, it*/
 
-// TODO test events
-
 'use strict';
 
 var Collection = require('../');
