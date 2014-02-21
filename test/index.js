@@ -2,7 +2,7 @@
 
 'use strict';
 
-var Collection = require('../');
+var Collection = process.env.AK_COLLECTION_TEST_COVERAGE ? require('../lib-cov/collection') : require('../');
 var assert = require('assert');
 var Dummy = function () {};
 var Dummy2 = function () {};
